@@ -142,10 +142,7 @@ GLOBAL_LIST_EMPTY_TYPED(dead_oozeling_cores, /obj/item/organ/internal/brain/slim
 		. += span_red("You could probably use the core in-hand to snuff out the tracking signal and retrieve the items within it.")
 	else
 		. += span_red("You could probably use the core in-hand to retrieve the items within it.")
-var/has_dnr_quirk = FALSE
-	if(!isnull(stored_quirks))
-		has_dnr_quirk = locate(/datum/quirk/dnr) in stored_quirks
-	if(mind?.dnr || has_dnr_quirk)
+	if(mind?.dnr || (locate(/datum/quirk/dnr) in stored_quirks))
 		. += span_warning("It looks dull and faded, as if the soul within the core had moved on...")
 	else if((brainmob && (brainmob.client || brainmob.get_ghost())) || (mind?.current && (mind.current.client || mind.current.get_ghost())) || decoy_override)
 		if(isnull(stored_dna))
@@ -417,10 +414,7 @@ var/has_dnr_quirk = FALSE
 
 /obj/item/organ/internal/brain/slime/check_for_repair(obj/item/item, mob/user)
 	if(item.is_drainable() && item.reagents.has_reagent(/datum/reagent/toxin/plasma)) //attempt to heal the brain
-
-		var/has_dnr_quirk = FALSE
-		if(!isnull(stored_quirks))
-			has_dnr_quirk = locate(/datum/quirk/dnr) in stored_quirks
+		var/has_dnr_quirk = locate(/datum/quirk/dnr) in stored_quirks
 
 		if(mind?.dnr || has_dnr_quirk)
 			to_chat(user, span_warning("The soul of [src] has departed..."))

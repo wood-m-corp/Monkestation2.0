@@ -11,14 +11,14 @@
 	name = "Sandevistan Implant"
 	desc = "A box containing an autosurgeon for a sandevistan, allowing you to outspeed targets."
 	item = /obj/item/autosurgeon/syndicate/sandy
-	cost = 13
+	cost = 14
 	purchasable_from = UPLINK_TRAITORS
 
 /datum/uplink_item/cybernetics/mantis
 	name = "Mantis Blade Bundle"
 	desc = "A box containing autosurgeons for two mantis blade implants, one for each arm."
 	item = /obj/item/storage/box/syndie_kit/mantis
-	cost = 12
+	cost = 40
 	purchasable_from = UPLINK_TRAITORS
 
 /obj/item/storage/box/syndie_kit/mantis/PopulateContents()
@@ -38,7 +38,7 @@
 	Two tile range and can anchor further targets to keep them still."
 	item = /obj/item/autosurgeon/syndicate/razorwire
 	progression_minimum = 15 MINUTES
-	cost = 5
+	cost = 6
 	surplus = 20
 
 /datum/uplink_item/cybernetics/hacked_linked_surgery

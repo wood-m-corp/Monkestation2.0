@@ -46,7 +46,7 @@
 			The concussive effect from the explosion will knock the recipient out for a short period, and deafen them for longer."
 	progression_minimum = 20 MINUTES
 	item = /obj/item/computer_disk/virus/detomatix
-	cost = 5
+	cost = 10
 	restricted = TRUE
 
 /datum/uplink_item/explosives/emp
@@ -108,7 +108,7 @@
 		The bomb core can be pried out and manually detonated with other explosives."
 	progression_minimum = 30 MINUTES
 	item = /obj/item/sbeacondrop/bomb
-	cost = 11
+	cost = 12
 
 /datum/uplink_item/explosives/syndicate_bomb/New()
 	. = ..()
@@ -136,7 +136,7 @@
 /datum/uplink_item/explosives/door_charge
 	name = "Door Charge"
 	desc = "A small charge that can be rigged to a door, causing it to explode when the handle is moved. Tiny OS and microphone installed for taunting your victims."
-	cost = 4
+	cost = 100
 	item = /obj/item/traitor_machine_trapper/door_charge
 
 /datum/uplink_item/explosives/china_lake

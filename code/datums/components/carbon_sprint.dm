@@ -65,7 +65,7 @@
 		stopSprint()
 
 /datum/component/carbon_sprint/proc/keyDown()
-	RegisterSignal(carbon_parent, COMSIG_MOB_CLIENT_PRE_MOVE, PROC_REF(onMobMove))
+	//RegisterSignal(carbon_parent, COMSIG_MOB_CLIENT_PRE_MOVE, PROC_REF(onMobMove))
 
 /datum/component/carbon_sprint/proc/keyUp()
 	UnregisterSignal(carbon_parent, COMSIG_MOB_CLIENT_PRE_MOVE)

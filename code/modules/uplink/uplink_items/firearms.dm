@@ -12,7 +12,7 @@
 		riot darts. Perfect for nonlethal takedowns at range, as well as deniability. While not included in the kit, the \
 		pistol is compatible with suppressors, which can be purchased separately."
 	item = /obj/item/storage/toolbox/guncase/traitor/donksoft
-	cost = 2
+	cost = 4
 	surplus = 50
 	purchasable_from = ~UPLINK_NUKE_OPS
 
@@ -22,7 +22,7 @@
 		Chambered in 9mm. Perfect for frequent skirmishes with security, as well as ensuring you have enough firepower to outlast the competition. \
 		While not included in the kit, the pistol is compatible with suppressors, which can be purchased seperately."
 	item = /obj/item/storage/toolbox/guncase/traitor
-	cost = 7
+	cost = 10
 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS)
 
 /datum/uplink_item/firearms/whispering_jester_45
@@ -30,7 +30,7 @@
 	desc = "A .45 handgun that is designed by Rayne Corp. The handgun has a built in suppressor. It's magazines contain 18 rounds and it comes in a weapons\
 	case holding two extra magazines and a ammo box."
 	item = /obj/item/storage/toolbox/guncase/traitor/jester
-	cost = 10
+	cost = 13
 	surplus = 50
 
 /datum/uplink_item/firearms/crossbow
@@ -52,7 +52,7 @@
 	Kit comes with 3 Speedloaders included."
 	item = /obj/item/storage/toolbox/guncase/traitor/revolver
 	progression_minimum = 30 MINUTES
-	cost = 12
+	cost = 16
 	surplus = 50
 	purchasable_from = ~UPLINK_CLOWN_OPS
 
@@ -60,7 +60,7 @@
 	name = "Syndicate Rebar Crossbow"
 	desc = "A much more proffessional version of the engineer's bootleg rebar crossbow. Quicker loading, and better ammo. Owners manual included."
 	item = /obj/item/storage/box/syndie_kit/rebarxbowsyndie
-	cost = 8
+	cost = 10
 
 /datum/uplink_item/firearms/laser_musket
 	name = "Syndicate Laser Musket"
@@ -69,7 +69,7 @@
 			Rumors of this 'siphoning power off your lifeforce' are greatly exaggerated, and Aetherofusion assures safety for up to 2 years of use."
 	item = /obj/item/gun/energy/laser/musket/syndicate
 	progression_minimum = 30 MINUTES
-	cost = 12
+	cost = 30
 	surplus = 40
 	purchasable_from = ~UPLINK_CLOWN_OPS
 
@@ -79,14 +79,14 @@
 	3 buckshot filled magazines are included in the kit."
 	item = /obj/item/storage/toolbox/guncase/traitor/autoshotgun
 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS) // Nuke ops have their own shotty, Clown ops can't buy lethal firearms
-	cost = 14
+	cost = 19
 
 /datum/uplink_item/firearms/shotgun_revolver
 	name = "\improper Bóbr 12 GA revolver"
 	desc = "An outdated sidearm rarely seen in use by some members of the CIN. A revolver type design with a four shell cylinder. That's right, shell, this one shoots twelve guage.\
 	Comes with a 2 boxes of shotgun slugs and a tutel which works as both a shield and holds ammo to load your revolver with."
 	item = /obj/item/storage/toolbox/guncase/traitor/bobr
-	cost = 5
+	cost = 7
 
 /datum/uplink_item/firearms/wespe
 	name = "Wespe Pistol"
@@ -94,7 +94,7 @@
 	an ammo box, we don't recommend this one for much more than assistants however"
 	progression_minimum = 5 MINUTES
 	item = /obj/item/storage/toolbox/guncase/traitor/wespe
-	cost = 3
+	cost = 5
 
 /datum/uplink_item/firearms/shit_smg
 	name = "Surplus Smg Bundle"
@@ -113,7 +113,7 @@
 	desc = "A miniaturized version of a normal syringe gun. It is very quiet when fired and can fit into any \
 			space a small item can."
 	item = /obj/item/gun/syringe/syndicate
-	cost = 4
+	cost = 6
 	surplus = 50
 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS)
 
@@ -123,5 +123,5 @@
 	The FSS-550 is a modified version of the WT-550 autorifle, it's good for arming a large group, but is weaker compared to 'proper' guns."
 	item = /obj/item/disk/design_disk/fss
 	progression_minimum = 15 MINUTES
-	cost = 5
+	cost = 8
 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS) //Because I don't think they get an autolathe or the resources to use the disk.

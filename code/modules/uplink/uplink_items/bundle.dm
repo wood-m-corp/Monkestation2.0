@@ -57,7 +57,7 @@
 			The Syndicate will only provide one Syndi-Kit per agent."
 	progression_minimum = 30 MINUTES
 	item = /obj/item/storage/box/syndicate/bundle_a
-	cost = 25
+	cost = 250
 	stock_key = UPLINK_SHARED_STOCK_KITS
 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SPY)
 
@@ -69,7 +69,7 @@
 			The Syndicate will only provide one Syndi-Kit per agent."
 	progression_minimum = 30 MINUTES
 	item = /obj/item/storage/box/syndicate/bundle_b
-	cost = 25
+	cost = 250
 	stock_key = UPLINK_SHARED_STOCK_KITS
 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SPY)
 
@@ -79,7 +79,7 @@
 			If the rumors are true, it will fill it's contents based on your current reputation. Get on that grind. \
 			Contents are sorted to always be worth 100 TC. The Syndicate will only provide one surplus item per agent."
 	item = /obj/structure/closet/crate // will be replaced in purchase()
-	cost = 25
+	cost = 250
 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SPY)
 	stock_key = UPLINK_SHARED_STOCK_SURPLUS
 	/// Value of items inside the crate in TC
@@ -150,7 +150,7 @@
 			It is recommended that you only attempt to open it by having another agent purchase a Surplus Crate Key. Unite and fight. \
 			Rumored to contain a valuable assortment of items based on your current reputation, but you never know. Contents are sorted to always be worth 150 TC. \
 			The Syndicate will only provide one surplus item per agent."
-	cost = 25
+	cost = 250
 	item = /obj/structure/closet/crate/syndicrate
 	progression_minimum = 30 MINUTES
 	stock_key = UPLINK_SHARED_STOCK_SURPLUS
@@ -174,7 +174,7 @@
 	desc = "This inconscpicous device is actually a key that can open any United Surplus Crate. It can only be used once. \
 			Though initially designed to encourage cooperation, agents quickly discovered that you can turn the key to the crate by yourself.  \
 			The Syndicate will only provide one surplus item per agent."
-	cost = 25
+	cost = 250
 	item = /obj/item/syndicrate_key
 	progression_minimum = 30 MINUTES
 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS | UPLINK_SPY)
@@ -274,6 +274,6 @@
 	desc = "A small, budget-friendly kit for new operatives. Contains a selection of basic tools. \
 			The Syndicate provides only one Mini-Kit per agent."
 	item = /obj/item/storage/box/syndie_kit/mini_kit
-	cost = 10
+	cost = 250
 	stock_key = UPLINK_SHARED_STOCK_KITS
 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS)

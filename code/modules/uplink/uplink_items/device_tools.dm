@@ -213,7 +213,7 @@
 	name = "Hypnotic Flash"
 	desc = "A modified flash able to hypnotize targets. If the target is not in a mentally vulnerable state, it will only confuse and pacify them temporarily."
 	item = /obj/item/assembly/flash/hypnotic
-	cost = 7
+	cost = 999
 
 /datum/uplink_item/device_tools/hypnotic_grenade
 	name = "Hypnotic Grenade"
@@ -270,7 +270,7 @@
 			organic host as a home base and source of fuel. Holoparasites come in various types and share damage with their host."
 	progression_minimum = 30 MINUTES
 	item = /obj/item/guardian_creator/tech
-	cost = 15
+	cost = 40
 	surplus = 40
 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS)
 	restricted = TRUE

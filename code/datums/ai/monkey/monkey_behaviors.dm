@@ -1,6 +1,15 @@
 /datum/ai_behavior/battle_screech/monkey
 	screeches = list("roar","screech")
 
+// getting eaten flips a monkey into the combat subtree, which screeches from its own list.
+// penned ones use their quiet idle emotes instead.
+/datum/ai_behavior/battle_screech/monkey/perform(seconds_per_tick, datum/ai_controller/controller)
+	if(!controller.blackboard[BB_MONKEY_PENNED])
+		return ..()
+	var/datum/idle_behavior/idle_monkey/penned/quiet = controller.idle_behavior
+	INVOKE_ASYNC(controller.pawn, TYPE_PROC_REF(/mob, emote), pick(quiet.common_emotes))
+	finish_action(controller, TRUE)
+
 /datum/ai_behavior/monkey_equip
 	behavior_flags = AI_BEHAVIOR_REQUIRE_MOVEMENT
 
@@ -127,7 +136,7 @@
 			break
 
 	if(target)
-		SSmove_manager.move_away(living_pawn, target, max_dist=MONKEY_ENEMY_VISION, delay=5)
+		GLOB.move_manager.move_away(living_pawn, target, max_dist=MONKEY_ENEMY_VISION, delay=5)
 	else
 		finish_action(controller, TRUE)
 
@@ -169,7 +178,7 @@
 	controller.clear_blackboard_key(target_key)
 	if(QDELETED(living_pawn)) // pawn can be null at this point
 		return
-	SSmove_manager.stop_looping(living_pawn)
+	GLOB.move_manager.stop_looping(living_pawn)
 
 /// attack using a held weapon otherwise bite the enemy, then if we are angry there is a chance we might calm down a little
 /datum/ai_behavior/monkey_attack_mob/proc/monkey_attack(datum/ai_controller/controller, mob/living/target, seconds_per_tick, disarm)

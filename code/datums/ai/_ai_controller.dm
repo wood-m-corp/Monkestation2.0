@@ -284,7 +284,7 @@ multiple modular subtrees with behaviors
 ///Runs any actions that are currently running
 /datum/ai_controller/process(seconds_per_tick)
 	if(!able_to_run())
-		SSmove_manager.stop_looping(pawn) //stop moving
+		GLOB.move_manager.stop_looping(pawn) //stop moving
 		return //this should remove them from processing in the future through event-based stuff.
 
 	if(!LAZYLEN(current_behaviors) && idle_behavior)
@@ -366,7 +366,7 @@ multiple modular subtrees with behaviors
 		if(LAZYACCESS(planned_behaviors, current_behavior))
 			continue
 		var/list/arguments = list(src, FALSE)
-		var/list/stored_arguments = behavior_args[type]
+		var/list/stored_arguments = behavior_args[current_behavior.type]
 		if(stored_arguments)
 			arguments += stored_arguments
 		current_behavior.finish_action(arglist(arguments))

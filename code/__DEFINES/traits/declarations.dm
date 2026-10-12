@@ -127,8 +127,8 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 /// Makes the owner appear as dead to most forms of medical examination
 #define TRAIT_FAKEDEATH "fakedeath"
 #define TRAIT_DISFIGURED "disfigured"
-//FOR XENO LARVA
-#define TRAIT_NEUTERED "neutered" //the mob cant reproduce
+/// This mob cant reproduce
+#define TRAIT_NEUTERED "neutered"
 /// "Magic" trait that blocks the mob from moving or interacting with anything. Used for transient stuff like mob transformations or incorporality in special cases.
 /// Will block movement, `Life()` (!!!), and other stuff based on the mob.
 #define TRAIT_NO_TRANSFORM "block_transformations"
@@ -1383,6 +1383,8 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 
 /// For if a body has been dissected, to prevent repeats.
 #define TRAIT_BORER_DISSECTION "borer_dissection"
+/// Given if the host is a willing host
+#define TRAIT_WILLING_HOST "borer_willing_host"
 
 // Traits related directly to Clockwork Cult
 /// Given to Clockwork Golems, gives them a reduction on invoke time for certain scriptures.
@@ -1404,3 +1406,14 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 
 /// Trait applied to a mob when it gets a required "operational datum" (components/elements). Sends out the source as the type of the element.
 #define TRAIT_SUBTREE_REQUIRED_OPERATIONAL_DATUM "element-required"
+
+/// Doesn't squash mobs like roaches and stuff when walking over them
+#define TRAIT_CAREFUL_STEPS "careful_steps"
+/// Prevents shattering glass tables
+#define TRAIT_LIGHTWEIGHT "lightweight"
+/// Ate past its max hunger via the generic_mob_hunger component, wears off after a few minutes
+#define TRAIT_OVERFED "overfed"
+/// Currently has the rainbow color-cycle effect applied
+#define TRAIT_RAINBOWED "rainbowed"
+/// Weapon carries the starborne enchantment, just used to track "hey this thing is already enchanted", bc starborne uses an element
+#define TRAIT_STARBORNE "starborne"
